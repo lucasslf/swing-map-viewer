@@ -53,10 +53,6 @@ public class MapServerProxyArcGIS10 implements MapServerProxy {
 
     static {
         ImageIO.setCacheDirectory(new File("D:/appfiles/temp"));
-
-        System.setProperty("http.proxyHost", "inet-ba.petrobras.com.br");
-        System.setProperty("http.proxyPort", "8080");
-        System.setProperty("http.nonProxyHosts", "*.petrobras.com.br|*.petrobras.biz");
     }
 
     private Client getClient() {
